@@ -51,6 +51,9 @@ footer nav a {
 .bg-wwa_image {
     background-image: url("images/minimal-5.jpg");
 }
+.bg-contact_image {
+    background-image: url("images/minimal-12.jpg");
+}
 
 /* Contact */
 input, textarea {
@@ -60,7 +63,6 @@ input, textarea {
     display: block;
     width: 100%;
     font-size: 1rem;
-    vertical-align: top;
   }
   
   input:focus,
@@ -94,9 +96,10 @@ input, textarea {
   form .button {
     width:100%;
   }
-    @media(max-width:768px) {
-     .email-signup input {
-       width: 100%;
-       max-width: 100%;
-     }
-   }
+
+@media(max-width:768px) {
+    .email-signup input {
+    width: 100%;
+    max-width: 100%;
+    }
+}

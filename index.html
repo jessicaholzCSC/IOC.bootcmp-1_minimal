@@ -130,12 +130,14 @@
     </section>
 
     <!-- Duis Aute Irure -->
-    <section class="text-center p-[10%]">
-        <h1>Duis Aute Irure</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos voluptatum dolores hic aspernatur ipsam provident, delectus debitis iste recusandae perferendis fugit dicta reprehenderit minima eius voluptatem alias ex odit?</p>
+    <section class="text-center p-[5%]">
+        <div class="p-6 flex flex-col max-w-lg gap-4 mx-auto">
+            <h1 class="font-display text-5xl">Duis Aute Irure</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos voluptatum dolores hic aspernatur ipsam provident, delectus debitis iste recusandae perferendis fugit dicta reprehenderit minima eius voluptatem alias ex odit?</p>
+        </div>
         <div class="grid md:grid-cols-3 py-4 gap-4">
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-2.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-6.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Flowers </h3>
@@ -145,7 +147,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-3.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-7.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Stairs </h3>
@@ -155,7 +157,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-8.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Hair </h3>
@@ -165,7 +167,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-9.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Hair </h3>
@@ -175,7 +177,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-10.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Hair </h3>
@@ -185,7 +187,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                <div class="hover-container" style="background-image:url('/images/minimal-11.jpg')">
                     <div class="hover-overlay">
                         <div class="hover-inner text-center">
                             <h3> Hair </h3>
@@ -194,31 +196,28 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="uppercase p-8">
+            <a class="border border-black px-3 p-1" href="">Sign Up</a>
+        </div>
     </section>
 
     <!-- Contact Us -->
-    <section class="grid md:grid-cols-2 p-5p">
-        <div class="p-5p">
-            <h2> Get In Touch </h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            <p> <strong> Email: </strong> hello@company.com </p>
-            <p> <strong> Phone: </strong> 0412 555 555 </p>
-            <p> <strong> Facebook: </strong> fb.com/companyname </p>
-        </div>
-        <div class="self-center p-5p">
-            <form class="grid md:grid-cols-2  gap-4" action="https://formspree.io/hello@company.com" method="POST">
-                <div class="">
-                    <input type="text" name="name" placeholder="Your Name">
+    <section class="grid md:grid-cols-2 border border-black divide-x divide-y divide-black">
+        <div class="bg-contact_image"></div>
+        <div class="p-[5%] px-10">
+            <h2 class="py-4">Contact Us</h2>
+            <form class="grid gap-4" action="https://formspree.io/hello@company.com" method="POST">
+                <div class="block">
+                    <input class="bg-transparent border-transparent border-b-black border-b placeholder:text-black" type="text" name="name" placeholder="Name">
                 </div>
                 <div class="">
-                    <input type="email" name="_replyto" placeholder="Your Email">
+                    <input class="bg-transparent border-transparent border-b-black border-b placeholder:text-black" type="email" name="_replyto" placeholder="Email">
                 </div>
                 <div class="col-span-full">
-                    <textarea placeholder="Your Message" class="mb-4"></textarea>
-                    <input type="submit" value="Send" class="button">
+                    <p>Message</p>
+                    <textarea class="bg-transparent border border-black" placeholder="" class="mb-4"></textarea>
+                    <input class="m-2 border bg-transparent border-black items-end" type="submit" value="Send" class="button">
                 </div>
             </form>
         </div>
