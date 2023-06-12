@@ -31,10 +31,72 @@
     margin-bottom: 0;  
 }
 
+/* Footer Styles */
+header nav a {
+    margin: 0.5rem;
+}
 
 /* Footer Styles */
 footer nav a {
     display:block;
     padding: 0.25rem;
     font-size: 0.9rem;
+}
+
+/* Images */
+.bg-header_image {
+    background-image: url("/images/minimal-1.jpg");
+}
+
+.bg-wwa_image {
+    background-image: url("images/minimal-5.jpg");
+}
+
+/* Contact */
+input, textarea {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
   }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #e67e22;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width:100%;
+  }
+    @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }

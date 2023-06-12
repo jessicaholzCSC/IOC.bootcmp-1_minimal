@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    'sans': ['Poppins', 'sans-serif'],
+                    'display': ['Montserrat', 'sans-serif']
+                },
+                colors: {
+                    'sand': '#EAE6DE',
+                },
+            }
+          }
+        }
+      </script>
 
     <title>IOC Project 1</title>
 </head>
-<body>
-    <header>
-        <div class="flex justify-around px-5p py-4">
-            <nav class="text-right">
+
+<body class="bg-sand">
+    <header class="bg-header_image bg-cover bg-no-repeat aspect-video">
+        <div class="flex justify-around px-8 py-4 border-b-2 border-b-amber-800 text-amber-800">
+            <nav class="">
                 <a href="#"> Nav 1 </a>
                 <a href="#"> Nav 2 </a>
                 <a href="#"> Nav 3 </a>
             </nav>
             <div class="text-center">
                 <a href="/">
-                <h2 class="logo"> LOGO </h2>
+                    <h2 class="logo text-white text-xl"> LOGO </h2>
                 </a>
             </div>
             <nav class="">
@@ -27,124 +45,226 @@
                 <a href="#"> Nav 6 </a>
             </nav>
         </div>
-        <div class="banner flex justify-center items-center">
-            <hr>
-            <h2 class="big-bold"> This this a heading </h2>
-            <h3 class="not-bold"> This is a sub-heading </h3>
+        <div class="flex flex-col justify-center items-center text-white p-[10%]">
+            <hr class="w-52">
+            <h2 class="uppercase text-7xl p-8 font-display"> This this a heading </h2>
+            <h3 class="not-bold font-sans"> This is a sub-heading </h3>
         </div>
     </header>
 
     <!-- Our Services -->
-    <section class="p-5p text-center">
-        <h2> Our Services </h2>
-        <div class="grid md:grid-cols-3 p-4">
-          <div class="col-4_sm-12 p-4">
-            <div class="hover-container" style="background-image:url('/images/headshot-3.png')">
-              <div class="hover-overlay">
-                <div class="hover-inner">
-                  <h3> Joe </h3>
-                  <p> Co-founder
-                  </div>
+    <section class="p-[5%] text-left">
+        <h2 class="font-semibold uppercase"> Our Services </h2>
+        <div class="grid md:grid-cols-3 py-4 gap-4">
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-2.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Flowers </h3>
+                            <p> We Love Them </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-4_sm-12 p-4">
-              <div class="hover-container" style="background-image:url('/images/headshot-2.png')">
-                <div class="hover-overlay">
-                  <div class="hover-inner">
-                    <h3> Suzie </h3>
-                    <p> Developer </p>
-                  </div>
+                <div class="text-center p-4 gap-2 flex flex-col font-sans">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
                 </div>
-              </div>
             </div>
-            <div class="col-4_sm-12 p-4">
-              <div class="hover-container" style="background-image:url('/images/headshot-1.png')">
-                <div class="hover-overlay">
-                  <div class="hover-inner">
-                    <h3> Angie </h3>
-                    <p> Admin </p>
-                  </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-3.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Stairs </h3>
+                            <p> You Need Them </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="text-center p-4 gap-2 flex flex-col font-sans">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
+                </div>
             </div>
-      
-          </section>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Hair </h3>
+                            <p> Wish I Had It </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4 gap-2 flex flex-col font-sans">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
+                </div>
+            </div>
+    </section>
 
     <!-- Who We Are -->
-    <section>
+    <section class="grid grid-cols-12 bg-wwa_image bg-cover border border-black divide-x divide-y divide-black">
+        <div class="col-span-3"></div>
+        <div class="col-span-4 min-h-[60vh] bg-sand p-6 py-24">
+            <h1 class="uppercase text-3xl">Who We Are</h1>
+            <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita quas deleniti consectetur amet nesciunt quia repudiandae, impedit id soluta vitae nam consequatur. Libero magni ipsum molestiae, eius adipisci eligendi.</p>
+            <div class="uppercase">
+                <a class="border border-black px-3 p-1" href="">Find Out More</a>
+            </div>
+        </div>
+        <div class="col-span-5"></div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
 
     </section>
-     
+
     <!-- Duis Aute Irure -->
-    <section>
+    <section class="text-center p-[10%]">
+        <h1>Duis Aute Irure</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos voluptatum dolores hic aspernatur ipsam provident, delectus debitis iste recusandae perferendis fugit dicta reprehenderit minima eius voluptatem alias ex odit?</p>
+        <div class="grid md:grid-cols-3 py-4 gap-4">
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-2.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Flowers </h3>
+                            <p> We Love Them </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-3.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Stairs </h3>
+                            <p> You Need Them </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Hair </h3>
+                            <p> Wish I Had It </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Hair </h3>
+                            <p> Wish I Had It </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Hair </h3>
+                            <p> Wish I Had It </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="hover-container" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="hover-inner text-center">
+                            <h3> Hair </h3>
+                            <p> Wish I Had It </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </section>
 
     <!-- Contact Us -->
     <section class="grid md:grid-cols-2 p-5p">
         <div class="p-5p">
-          <h2> Get In Touch </h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p> <strong> Email: </strong> hello@company.com </p>
-          <p> <strong> Phone: </strong> 0412 555 555 </p>
-          <p> <strong> Facebook: </strong> fb.com/companyname </p>
+            <h2> Get In Touch </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <p> <strong> Email: </strong> hello@company.com </p>
+            <p> <strong> Phone: </strong> 0412 555 555 </p>
+            <p> <strong> Facebook: </strong> fb.com/companyname </p>
         </div>
         <div class="self-center p-5p">
-          <form class="grid md:grid-cols-2  gap-4" action="https://formspree.io/hello@company.com" method="POST">
-            <div class="">
-              <input type="text" name="name" placeholder="Your Name">
-            </div>
-            <div class="">
-              <input type="email" name="_replyto" placeholder="Your Email">
-            </div>
-            <div class="col-span-full">
-              <textarea placeholder="Your Message" class="mb-4"></textarea>
-              <input type="submit" value="Send" class="button">
-            </div>
-          </form>
+            <form class="grid md:grid-cols-2  gap-4" action="https://formspree.io/hello@company.com" method="POST">
+                <div class="">
+                    <input type="text" name="name" placeholder="Your Name">
+                </div>
+                <div class="">
+                    <input type="email" name="_replyto" placeholder="Your Email">
+                </div>
+                <div class="col-span-full">
+                    <textarea placeholder="Your Message" class="mb-4"></textarea>
+                    <input type="submit" value="Send" class="button">
+                </div>
+            </form>
         </div>
-      </section>
+    </section>
 
-      <footer class="grid md:grid-cols-4 p-5p">
+    <footer class="grid md:grid-cols-4 p-5p">
         <!-- column -->
         <div class="p-4 md:pr-8">
-          <h2 class="logo"> Logo </h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h2 class="logo"> Logo </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
         </div>
-      
+
         <!-- column -->
         <div class="p-4">
-          <h4 class="caps"> Our Services </h4>
-          <nav>
-            <a href="#"> Lorem ipsum </a>
-            <a href="#"> Dolor sit </a>
-            <a href="#"> Consectetur </a>
-            <a href="#"> Ut enim ad </a>
-          </nav>
+            <h4 class="caps"> Our Services </h4>
+            <nav>
+                <a href="#"> Lorem ipsum </a>
+                <a href="#"> Dolor sit </a>
+                <a href="#"> Consectetur </a>
+                <a href="#"> Ut enim ad </a>
+            </nav>
         </div>
-      
+
         <!-- column -->
         <div class="p-4">
-          <h4 class="caps"> Explore </h4>
-          <nav>
-            <a href="#"> Lorem ipsum </a>
-            <a href="#"> Dolor sit </a>
-            <a href="#"> Consectetur </a>
-            <a href="#"> Ut enim ad </a>
-          </nav>
+            <h4 class="caps"> Explore </h4>
+            <nav>
+                <a href="#"> Lorem ipsum </a>
+                <a href="#"> Dolor sit </a>
+                <a href="#"> Consectetur </a>
+                <a href="#"> Ut enim ad </a>
+            </nav>
         </div>
-      
+
         <!-- column -->
         <div class="p-4">
-          <h4 class="caps"> Connect </h4>
-          <nav>
-            <a href="#"> Facebook </a>
-            <a href="#"> Instagram </a>
-            <a href="#"> Pinterest </a>
-            <a href="#"> Youtube </a>
-          </nav>
+            <h4 class="caps"> Connect </h4>
+            <nav>
+                <a href="#"> Facebook </a>
+                <a href="#"> Instagram </a>
+                <a href="#"> Pinterest </a>
+                <a href="#"> Youtube </a>
+            </nav>
         </div>
-      </footer>    
+    </footer>
 </body>
+
 </html>
