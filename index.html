@@ -29,20 +29,31 @@
 <body class="bg-sand">
     <header class="bg-header_image bg-cover bg-no-repeat aspect-video">
         <div class="flex justify-around px-8 py-4 border-b-2 border-b-amber-800 text-amber-800">
-            <nav class="">
+            <nav class="max-sm:hidden">
                 <a href="#"> Nav 1 </a>
                 <a href="#"> Nav 2 </a>
                 <a href="#"> Nav 3 </a>
             </nav>
             <div class="text-center">
                 <a href="/">
-                    <h2 class="logo text-white text-xl"> LOGO </h2>
+                    <h2 class="logo text-white text-xl md:text-3xl"> LOGO </h2>
                 </a>
             </div>
-            <nav class="">
+            <nav class="max-sm:hidden">
                 <a href="#"> Nav 4 </a>
                 <a href="#"> Nav 5 </a>
                 <a href="#"> Nav 6 </a>
+            </nav>
+            <nav class="sm:hidden">
+                <div class="space-y-2">
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                </div>
+                
+                <!-- <a href="#"> Nav 4 </a>
+                <a href="#"> Nav 5 </a>
+                <a href="#"> Nav 6 </a> -->
             </nav>
         </div>
         <div class="flex flex-col justify-center items-center text-white p-[10%]">
@@ -111,21 +122,21 @@
 
     <!-- Who We Are -->
     <section class="grid grid-cols-12 bg-wwa_image bg-cover border border-black divide-x divide-y divide-black">
-        <div class="col-span-3"></div>
-        <div class="col-span-4 min-h-[60vh] bg-sand p-6 py-24">
+        <div class="md:col-span-3"></div>
+        <div class="col-span-10 md:col-span-4 min-h-[60vh] bg-sand p-6 py-24">
             <h1 class="uppercase text-3xl">Who We Are</h1>
             <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita quas deleniti consectetur amet nesciunt quia repudiandae, impedit id soluta vitae nam consequatur. Libero magni ipsum molestiae, eius adipisci eligendi.</p>
             <div class="uppercase">
                 <a class="border border-black px-3 p-1" href="">Find Out More</a>
             </div>
         </div>
-        <div class="col-span-5"></div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
-        <div class="col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="md:col-span-5"></div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
+        <div class="col-span-6 md:col-span-2 bg-sand text-center p-2">Brand Name</div>
 
     </section>
 
@@ -206,7 +217,7 @@
     <section class="grid md:grid-cols-2 border border-black divide-x divide-y divide-black">
         <div class="bg-contact_image"></div>
         <div class="p-[5%] px-10">
-            <h2 class="py-4">Contact Us</h2>
+            <h2 class="py-4 text-2xl uppercase">Contact Us</h2>
             <form class="grid gap-4" action="https://formspree.io/hello@company.com" method="POST">
                 <div class="block">
                     <input class="bg-transparent border-transparent border-b-black border-b placeholder:text-black" type="text" name="name" placeholder="Name">
@@ -217,23 +228,23 @@
                 <div class="col-span-full">
                     <p>Message</p>
                     <textarea class="bg-transparent border border-black" placeholder="" class="mb-4"></textarea>
-                    <input class="m-2 border bg-transparent border-black items-end" type="submit" value="Send" class="button">
+                    <input class="ml-auto mt-2 border bg-transparent border-black items-end p-2 px-4" type="submit" value="Send" class="button">
                 </div>
             </form>
         </div>
     </section>
 
-    <footer class="grid md:grid-cols-4 p-5p">
+    <footer class="grid md:grid-cols-10 p-5p">
         <!-- column -->
-        <div class="p-4 md:pr-8">
-            <h2 class="logo"> Logo </h2>
+        <div class="p-4 md:pr-8 col-span-10 md:col-span-3">
+            <h2 class="logo text-2xl"> Logo </h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. </p>
         </div>
 
         <!-- column -->
-        <div class="p-4">
-            <h4 class="caps"> Our Services </h4>
+        <div class="p-4 col-span-5 sm:col-span-2">
+            <h4 class="uppercase text-xl"> Our Services </h4>
             <nav>
                 <a href="#"> Lorem ipsum </a>
                 <a href="#"> Dolor sit </a>
@@ -243,8 +254,8 @@
         </div>
 
         <!-- column -->
-        <div class="p-4">
-            <h4 class="caps"> Explore </h4>
+        <div class="p-4 col-span-5 sm:col-span-2">
+            <h4 class="uppercase text-xl"> Explore </h4>
             <nav>
                 <a href="#"> Lorem ipsum </a>
                 <a href="#"> Dolor sit </a>
@@ -254,14 +265,15 @@
         </div>
 
         <!-- column -->
-        <div class="p-4">
-            <h4 class="caps"> Connect </h4>
-            <nav>
-                <a href="#"> Facebook </a>
-                <a href="#"> Instagram </a>
-                <a href="#"> Pinterest </a>
-                <a href="#"> Youtube </a>
-            </nav>
+        <div class="p-2 col-span-10 md:col-span-3">
+            <p class="p-2 uppercase text-xl">Subscribe to our Newsletter</p>
+            <form class="p-4">
+                <input class="bg-transparent border border-black" type="email" class=""></input>
+                <input class="ml-auto mt-2 border bg-transparent border-black items-end p-2 px-4" type="submit" value="SUBSCRIBE" class="button">
+            </form>
+        </div>
+        <div class="border border-black col-span-10">
+            <p class="px-28 py-10">Terms of Use</P>
         </div>
     </footer>
 </body>
