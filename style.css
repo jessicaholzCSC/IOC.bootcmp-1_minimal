@@ -9,7 +9,6 @@
     position: relative;
     padding-bottom: 100%;
     color: rgba(255, 255, 255, 0);
-    position: relative;
     /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
     transition: all 0.3s;
 }
@@ -103,3 +102,36 @@ input, textarea {
     max-width: 100%;
     }
 }
+
+/* Hamburger Style */
+
+.hamburger-button {
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Styles when the hamburger button is active  */
+.hamburger-button.active{
+  background-color: rgb(120 53 15);
+}
+
+.mobile-menu {
+  display: none; 
+  background-color: rgba(144, 60, 7, 0.8); 
+  padding: 5%;
+  position: fixed; 
+  top:0;
+  left:0;
+  right:0;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none; 
+  color: ghostwhite; 
+  padding: 1vh 5%;
+  display: block;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
